@@ -7,33 +7,59 @@
     <title>Jessé Code Tailwindcss</title>
   </head>
   <body>
-    <div>
-      <div>
-        <img src="img/insta-img.png" alt="imagem do istagram">
+    <div class="h-lvh w-lvw grid grid-cols-2 grid-rows-6">
+      <div class="row-span-5 flex justify-end">
+        <img class="w-max-96" src="img/insta-img.png" alt="imagem do istagram" />
+      </div>
+
+      <div class="row-span-5 flex justify-center items-center flex-col grid-cols-1">
+        <form class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5">
+          <img class="w-52" src="img/insta-logo.png" alt="logo do instagram" />
+          <input type="text" placeholder="Número de Telefone, e-mail" />
+          <input type="senha" placeholder="Senha" />
+
+          <button>Entrar</button>
+
+          <a>Logar com Facebook</a>
+          <a>Esqueci minha senha</a>
+        </form>
+        <div>
+          <p>Não tem conta? Faça seu cadastro</p>
+        </div>
+
+        <p>Baixe o aplicativo</p>
 
         <div>
-          <form>
-            <img src="img/insta-logo.png" alt="logo do instagram">
-            <input type="text" placeholder="Número de Telefone, e-mail">
-            <input type="senha" placeholder="Senha">
-
-            <button>Entrar</button>
-
-            <a>Logar com Facebook</a>
-            <a>Esqueci minha senha</a>
-          </form>
-          <div>
-            <p>Não tem conta? Faça seu cadastro</p>
-          </div>
-
-          <p>Baixe o aplicativo</p>
-
-          <div>
-            <img src="img/apple.png" alt="apple">
-            <img src="img/google.png" alt="facebook">
-          </div>
+          <img class="h-10" src="img/apple.png" alt="apple" />
+          <img class="h-10" src="img/google.png" alt="facebook" />
         </div>
       </div>
+
+      <footer>
+        <ul>
+          <li>Meta</li>
+          <li>Sobre</li>
+          <li>Blog</li>
+          <li>Carreiras</li>
+          <li>Ajuda</li>
+          <li>API</li>
+          <li>Privacidade</li>
+          <li>Termos</li>
+          <li>Localizações</li>
+          <li>Instagram</li>
+          Lite
+          <li>Threads</li>
+          <li>Carregamento</li>
+          de contatos e não usuários
+          <li>Meta Verified</li>
+        </ul>
+
+        <ul>
+          <li>Português (Brasil)</li>
+
+          <li>©2024 Instagram from Meta</li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
