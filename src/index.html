@@ -7,57 +7,88 @@
     <title>Jessé Code Tailwindcss</title>
   </head>
   <body>
-    <div class="h-lvh w-lvw grid grid-cols-2 grid-rows-6">
-      <div class="row-span-5 flex justify-end">
-        <img class="w-max-96" src="img/insta-img.png" alt="imagem do istagram" />
+    <div class="h-lvh w-lvw grid grid-cols-1 md:grid-cols-2 grid-rows-6">
+      <div class="row-span-5 md:flex justify-end hidden">
+        <img
+          class="w-max-96"
+          src="img/insta-img.png"
+          alt="imagem do istagram"
+        />
       </div>
 
-      <div class="row-span-5 flex justify-center items-center flex-col grid-cols-1">
-        <form class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5">
+      <div
+        class="row-span-5 flex justify-center items-center flex-col grid-cols-1"
+      >
+        <form
+          class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5"
+        >
           <img class="w-52" src="img/insta-logo.png" alt="logo do instagram" />
-          <input type="text" placeholder="Número de Telefone, e-mail" />
-          <input type="senha" placeholder="Senha" />
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border rounded-sm"
+            type="text"
+            placeholder="Número de Telefone, e-mail"
+          />
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border rounded-sm"
+            type="senha"
+            placeholder="Senha"
+          />
 
-          <button>Entrar</button>
+          <button
+            class="bg-blue-400 w-full rounded-sm h-8 text-slate-50 hover:bg-blue-500"
+          >
+            Entrar
+          </button>
 
-          <a>Logar com Facebook</a>
-          <a>Esqueci minha senha</a>
+          <a class="text-blue-800 font-bold cursor-pointer"
+            >Logar com Facebook</a
+          >
+          <a class="text-blue-800 text-sm cursor-pointer"
+            >Esqueci minha senha</a
+          >
         </form>
-        <div>
-          <p>Não tem conta? Faça seu cadastro</p>
+        <div class="border w-80 my-4 text-center py-4">
+          <p>
+            Não tem conta?
+            <a class="text-blue-400 font-bol cursor-pointer hover:text-blue-700"
+              >Faça seu cadastro</a
+            >
+          </p>
         </div>
 
         <p>Baixe o aplicativo</p>
 
-        <div>
-          <img class="h-10" src="img/apple.png" alt="apple" />
-          <img class="h-10" src="img/google.png" alt="facebook" />
+        <div class="flex gap-2 mt-2">
+          <img class="h-10 cursor-pointer" src="img/apple.png" alt="apple" />
+          <img
+            class="h-10 cursor-pointer"
+            src="img/google.png"
+            alt="facebook"
+          />
         </div>
       </div>
 
-      <footer>
-        <ul>
-          <li>Meta</li>
-          <li>Sobre</li>
-          <li>Blog</li>
-          <li>Carreiras</li>
-          <li>Ajuda</li>
-          <li>API</li>
-          <li>Privacidade</li>
-          <li>Termos</li>
-          <li>Localizações</li>
-          <li>Instagram</li>
-          Lite
-          <li>Threads</li>
-          <li>Carregamento</li>
-          de contatos e não usuários
-          <li>Meta Verified</li>
+      <footer class="row-span-1 col-span-2">
+        <ul class="flex flex-wrap gap-5 justify-center">
+          <li class="text-slate-700 text-sm">Meta</li>
+          <li class="text-slate-700 text-sm">Sobre</li>
+          <li class="text-slate-700 text-sm">Blog</li>
+          <li class="text-slate-700 text-sm">Carreiras</li>
+          <li class="text-slate-700 text-sm">Ajuda</li>
+          <li class="text-slate-700 text-sm">API</li>
+          <li class="text-slate-700 text-sm">Privacidade</li>
+          <li class="text-slate-700 text-sm">Termos</li>
+          <li class="text-slate-700 text-sm">Localizações</li>
+          <li class="text-slate-700 text-sm">Instagram</li>
+          <li class="text-slate-700 text-sm">Threads</li>
+          <li class="text-slate-700 text-sm">Carregamento</li>
+          <li class="text-slate-700 text-sm">Meta Verified</li>
         </ul>
 
-        <ul>
-          <li>Português (Brasil)</li>
+        <ul class="flex flex-wrap gap-5 justify-center mt-6">
+          <li class="text-slate-700">Português (Brasil)</li>
 
-          <li>©2024 Instagram from Meta</li>
+          <li class="text-slate-700">©2024 Instagram from Meta</li>
         </ul>
       </footer>
     </div>
